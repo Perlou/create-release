@@ -1,4 +1,4 @@
-name: 'Easily create a release'
+name: 'Easily create a release for a tag'
 description: 'Create a release for a tag in your repository'
 author: 'Perlou'
 branding:
