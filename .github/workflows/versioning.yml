@@ -1,3 +1,4 @@
+# https://github.com/Actions-R-Us/actions-tagger
 name: Keep the versions up-to-date
 
 on:
@@ -8,8 +9,6 @@ jobs:
   actions-tagger:
     runs-on: windows-latest
     steps:
-      - uses: Actions-R-Us/actions-tagger@95c51c646e75db5c6b7d447e3087bcee58677341
+      - uses: Actions-R-Us/actions-tagger@latest
         with:
-          publish_latest: true
-        env:
-          GITHUB_TOKEN: '${{secrets.GITHUB_TOKEN}}'
+          publish_latest_tag: true

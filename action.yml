@@ -1,6 +1,12 @@
-name: 'Create a Release'
+name: 'Easily create a release'
 description: 'Create a release for a tag in your repository'
-author: 'GitHub'
+author: 'Surmon'
+branding:
+  icon: 'tag'
+  color: 'gray-dark'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
 inputs:
   tag_name:
     description: 'The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag'
@@ -19,7 +25,7 @@ inputs:
     required: false
     default: false
   prerelease:
-    description: '`true` to identify the release as a prerelease. `false` to identify the release as a full release. Default: `false`'
+    description: '`true` to identify the release as a prerelease. `false` to identify the release as a full release. Default: `true` if the tag contains a hyphen'
     required: false
     default: false
   commitish:
@@ -38,9 +44,3 @@ outputs:
     description: 'The URL users can navigate to in order to view the release'
   upload_url:
     description: 'The URL for uploading assets to the release'
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
-branding:
-  icon: 'tag'
-  color: 'gray-dark'

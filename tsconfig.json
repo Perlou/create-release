@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "declaration": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "downlevelIteration": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": "src",
+    "outDir": "dist",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
