@@ -1,6 +1,6 @@
 name: 'Easily create a release'
 description: 'Create a release for a tag in your repository'
-author: 'Surmon'
+author: 'Perlou'
 branding:
   icon: 'tag'
   color: 'gray-dark'
