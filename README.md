@@ -53,7 +53,7 @@ jobs:
 
       - name: Create Release
         id: create_release
-        uses: surmon-china/create-release@v1
+        uses: perlou/create-release@v1
         env:
           # This token is provided by Actions, you do not need to create your own token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
