@@ -5,7 +5,7 @@ branding:
   icon: 'tag'
   color: 'gray-dark'
 runs:
-  using: 'node20'
+  using: 'node16'
   main: 'dist/index.js'
 inputs:
   tag_name:
